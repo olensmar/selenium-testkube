@@ -1,14 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 #from chromedriver_py import binary_path # this will get you the path variable
 import time
 
 print("Test Execution Started")
-options = Options()
-#options = webdriver.ChromeOptions()
+options = webdriver.ChromeOptions()
 options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument('--headless')
+options.add_argument('--no-sandbox')
 options.add_argument('--ignore-certificate-errors')
 #svc = webdriver.ChromeService(executable_path=binary_path)
 #driver = webdriver.Chrome(service=svc)
