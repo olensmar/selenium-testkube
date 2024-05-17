@@ -1,12 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from chromedriver_py import binary_path # this will get you the path variable
 import time
 
 print("Test Execution Started")
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument('--ignore-certificate-errors')
-driver = webdriver.Chrome(options=options)
+svc = webdriver.ChromeService(executable_path=binary_path)
+driver = webdriver.Chrome(service=svc)
+#driver = webdriver.Chrome(options=options)
 # Maximize the window size
 driver.maximize_window()
 print("Timer1")
