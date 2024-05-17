@@ -5,7 +5,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-ssl-errors=yes')
 options.add_argument('--ignore-certificate-errors')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome("/usr/local/bin/chromedriver")
 # Navigate to my blog
 driver.get("https://cerebro1.github.io/")
 # Click on the About button
