@@ -1,5 +1,6 @@
 package com.example;
 
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumTest {
+    @Test
     public static void main(String[] args) {
         System.out.println("Test Execution Started");
 
