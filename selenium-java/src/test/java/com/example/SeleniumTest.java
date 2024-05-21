@@ -39,6 +39,8 @@ public class SeleniumTest {
         try {
             if (browser.equalsIgnoreCase("firefox")) {
                 capabilities = new FirefoxOptions();
+                FirefoxOptions options = (FirefoxOptions) capabilities;
+                options.addArguments( "--headless" );
             } else if (browser.equalsIgnoreCase("chrome")) {
                 capabilities = new ChromeOptions();
                 ChromeOptions options = (ChromeOptions) capabilities;
