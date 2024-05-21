@@ -13,7 +13,7 @@ public class SeleniumTest {
         System.out.println("Test Execution Started");
 
         // Set the path to the chromedriver executable
-//        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         // Initialize ChromeOptions
         ChromeOptions options = new ChromeOptions();
