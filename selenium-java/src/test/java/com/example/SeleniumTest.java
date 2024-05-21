@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumTest {
     @Test
-    public static void main(String[] args) {
+    public void testWebsite() {
         System.out.println("Test Execution Started");
 
         // Set the path to the chromedriver executable
