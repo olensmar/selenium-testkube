@@ -72,8 +72,7 @@ public class SeleniumTest {
             e.printStackTrace();
         } finally {
             if (driver != null) {
-                System.out.println("closing session..");
-                driver.close();
+                System.out.println("endi session..");
                 driver.quit();
             }
         }
