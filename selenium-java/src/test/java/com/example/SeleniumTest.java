@@ -1,10 +1,7 @@
 package com.example;
 
-import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.ArgumentsProvider;
-import org.junit.jupiter.params.provider.ArgumentsSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
@@ -16,7 +13,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
-import java.time.Duration;
 import java.util.stream.Stream;
 
 public class SeleniumTest {
@@ -72,7 +68,7 @@ public class SeleniumTest {
             e.printStackTrace();
         } finally {
             if (driver != null) {
-                System.out.println("endi session..");
+                System.out.println("closing session..");
                 driver.quit();
             }
         }
